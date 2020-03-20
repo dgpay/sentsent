@@ -43,7 +43,6 @@ for i in range(0,len(kalimat)):
     hasil = re.sub(r'\brt\b', '',hasil)
     hasil = re.sub(r'@[\S]+', '',hasil)
     hasil = re.sub(r'#(\S+)', r' \1 ',hasil)
-    hasil = re.sub(r'@[\S]+', '', hasil)
     hasil = re.sub(r'\.{2,}', '', hasil)
     hasil = re.sub("[\b\.\b]{3}", " ", hasil)
     hasil = re.sub(r'\s+', ' ', hasil)
